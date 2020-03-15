@@ -81,51 +81,54 @@ header .navbar-mobile .navbar-footer { margin-left: auto; }
 }
 
 .bxslider li div { 
-    margin-left: 20%; 
+    margin-left: 30vw; 
+    margin-bottom: 5vw; 
     text-align: left;
     color: currentColor; 
 }
 
 .bxslider li div h2 { 
     margin-bottom: 2rem; 
-    font-size: 5rem; 
+    font-size: 5vw; 
     font-weight: 900;
 }
 
 .bxslider li div h3 { 
     margin-bottom: 1rem; 
-    line-height: 3rem; 
+    line-height: 2.75vw; 
     letter-spacing: -.05rem;
-    font-size: 2.5rem; 
+    font-size: 2vw; 
 }    
 
 .bxslider li div p { 
     position: absolute; 
     right: 9.5%; 
     bottom: 4%; 
+    padding: 3px 0; 
+    border-bottom: 1px dashed #525252; 
     letter-spacing: -.075rem;
-    font-size: 1.15rem; 
+    font-size: 1vw; 
 }
 
 #profile-info { 
     background: url(../images/tire-dotted.png) no-repeat; 
-    background-position-x: 10%;
-    background-position-y: 50px;
-    background-size: 30%; 
+    background-position-x: 5vw;
+    background-position-y: 10vh;
+    background-size: 50vw; 
 }
 
 #skill-info {
     background: url(../images/responsive.png) no-repeat; 
-    background-position-x: 5%;
-    background-position-y: 155px;
-    background-size: 33%; 
+    background-position-x: 3vw;
+    background-position-y: 25vh;
+    background-size: 48vw; 
 }
 
 #job-info { 
     background: url(../images/lighting.png) no-repeat; 
-    background-position-x: -4%;
-    background-position-y: -104px;
-    background-size: 50%; 
+    background-position-x: -3vw;
+    background-position-y: -5vw;
+    background-size: 50vw; 
 }
 
 /* main layout */
