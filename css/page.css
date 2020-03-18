@@ -603,4 +603,38 @@ footer p {
         margin-right: 0; 
         margin-bottom: 1.5rem; 
     }
+
+
+
+    .bxslider li div { margin-bottom: 50vh; }
+    
+    .bxslider li div h2 { font-size: 7vw; }
+    
+    .bxslider li div h3 { 
+        line-height: 3.25vw; 
+        font-size: 2.5vw; 
+    }    
+    
+    .bxslider li div p { font-size: 2vw; }
+    
+    #profile-info { 
+        background-position-x: -20vw;
+        background-position-y: 15vh;
+        background-size: 50vh; 
+    }
+    
+    #skill-info {
+        
+        background-position-x: -5vw;
+        background-position-y: 35vh;
+        background-size: 45vh; 
+    }
+    
+    #job-info { 
+        background-position-x: -35vw;
+        background-position-y: 0vw;
+        background-size: 80vh; 
+    }
+
+
 }
