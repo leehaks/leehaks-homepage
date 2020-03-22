@@ -65,7 +65,6 @@ window.onload = function(){
     const navMenu = document.querySelector('.navbar-menu'); 
     const navLink = document.querySelector('.navbar-link'); 
 
-    
     navToggleBtn.addEventListener('click', function(e) {
         e.preventDefault(); 
         navMenu.classList.toggle('active'); 
