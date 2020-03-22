@@ -8,67 +8,59 @@ header {
 
 header .navbar { 
     background-color: transparent; 
-    display: flex;
-    display: -ms-flexbox;
-    align-items: center;
-    -ms-flex-align: center;
+    padding: .75rem 9%; 
     justify-content: space-between;
     -ms-flex-pack: justify;
-    padding: 15px 9%; 
-    transition: all ease-in-out 0.5s; 
-    -webkit-transition: all ease-out 0.5s; 
+    transition: all .25s ease-in-out;
 }
 
-header .navbar.show { 
-    background-color: rgb(36,36,42); 
-    padding: 8px 7%; 
+header .navbar-logo a { 
+    background-image: url('../images/logo2.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 3.15rem; 
+    height: 3.25rem; 
+    display: block;
 }
 
-header .navbar.show .navbar-content ul li a { color: #fff; }
-header .navbar.show .change-color { fill: #fff; color: #fff; }
-
-header .navbar-header h1.logo { 
-    max-width: 55px; 
-    width: 100%;  
-    height: 100%;
-}
-
-header .navbar-content ul, 
-header .navbar-footer ul { 
-    display: flex;
-    display: -ms-flexbox;
-    align-items: center;
-    -ms-flex-align: center;
-}
-
-header .navbar-content ul li, 
-header .navbar-footer ul li { margin-left: 1.5rem; }
-
-header .navbar-content ul li:first-child, 
-header .navbar-footer ul li:first-child { margin-left: 0; }
-
-header .navbar-content ul li a { 
+header .navbar-menu li a { 
+    padding: .75em; 
     font-size: 13px; 
     color: currentColor; 
 }
 
-header .navbar-content ul li a.active { font-weight: 700; }
+header .navbar-menu a.active { font-weight: 700; }
 
-header .navbar-footer ul li a { width: 17px; }
-
-header .navbar-mobile { 
-    position: fixed; 
-    background: rgb(36,36,42); 
-    color: #fff; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    align-items: center;
-    padding: .5em 2em; 
-    display: none; 
+header .navbar-link a { 
+    width: 1.15rem;
+    height: 1.15rem; 
+    margin: .5rem; 
+    display: block;
+    background-repeat: no-repeat;
 }
 
-header .navbar-mobile .navbar-footer { margin-left: auto; }
+header .navbar-toggle-btn { 
+    display: none; 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    max-width: 20px; 
+}
+
+.navbar a[title="instagram"] { background-image: url('../images/icon/insta.svg')}
+.navbar a[title="facebook"] { background-image: url('../images/icon/facebook.svg')}
+.navbar a[title="github"] { background-image: url('../images/icon/github.svg')}
+
+.navbar,
+.list {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+.list li { margin-left: .75rem; }
+.list li:first-child { margin-left: 0; }
 
 /* bxslider */
 
@@ -567,21 +559,71 @@ footer p {
     font-size: .85rem; 
 }
 
-@media screen and (max-width: 1400px ) { 
-    html, body { font-size: 14px; }
+
+@media screen and (min-width: 1200px) {
+    .navbar.show { 
+        background: #24242a; 
+        padding: .5rem 9%;  
+        color: #fff; 
+    }
+    
+    .navbar.show .navbar-logo a { background-image: url('../images/logo.png'); }
+    
+    .navbar.show a[title="instagram"] { background-image: url('../images/icon/insta-w.svg') }
+    .navbar.show a[title="facebook"] { background-image: url('../images/icon/facebook-w.svg') }
+    .navbar.show a[title="github"] { background-image: url('../images/icon/github-w.svg') }
 }
 
-@media screen and (max-width: 1000px ) {
+@media screen and (max-width: 998px) { html, body { font-size: 14px; } }
 
-    .work-list .item, 
-    .comp-list .item { max-width: 50%; }
+@media screen and (max-width: 768px) { 
 
-    .work-list .con { min-height: 145px;}
-}
+    header .navbar { 
+        background: #24242a; 
+        padding: .5em 1em;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        align-items: flex-start;
+        color: #fff; 
+    }
 
-@media screen and (max-width: 639px ) { 
+    header .navbar-logo a { 
+        background: url(../images/logo.png); 
+        background-size: contain;
+    }
 
-    header .navbar-mobile { display: flex; }
+    header .navbar-menu { 
+        flex-direction: column;
+        -ms-flex-direction: column;
+        align-items: center;
+        -ms-flex-align: center;
+        width: 100%; 
+        display: none;
+    }
+
+    header .navbar-menu li { 
+        width: 100%;
+        margin-left: 0;  
+        text-align: center;
+    }
+
+    header .navbar-link { 
+        width: 100%; 
+        justify-content: center;
+        display: none;
+        margin: .5rem 0; 
+    }
+
+    header .navbar-toggle-btn { display: block; }
+    
+    header .navbar-menu.active, 
+    header .navbar-link.active { display: flex; }
+
+    header .active a[title="instagram"] { background-image: url('../images/icon/insta-w.svg') }
+    header .active a[title="facebook"] { background-image: url('../images/icon/facebook-w.svg') }
+    header .active a[title="github"] { background-image: url('../images/icon/github-w.svg') }
+
+
 
     .skill-list { display: block; }
 
@@ -604,3 +646,4 @@ footer p {
         margin-bottom: 1.5rem; 
     }
 }
+
