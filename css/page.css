@@ -408,6 +408,10 @@ header .navbar-toggle-btn {
     font-size: .85rem; 
 }
 
+/* card */
+
+.card .con table tbody tr td:first-child { width: 50px; }
+
 /* tab */
 
 .tab-component { 
