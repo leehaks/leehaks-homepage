@@ -14,54 +14,33 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/nav.js"></script>    
     <script src="js/bxslider.js"></script>  
-    <script src="js/tab.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <header>
         <nav id="webUI" class="navbar">
-            
-            <div class="navbar-header desk">
-                <h1 href="#" class="logo"><img src="images/logo2.png" alt="logo" /></h1>                                              
-            </div>
-            
-            <div class="navbar-content">
-                <ul>
-                    <li><a href="#home" class="scroll" title="HOME">HOME</a></li>
-                    <li><a href="#skill" class="scroll" title="SKILL">SKILL</a></li>
-                    <li><a href="#works" class="scroll" title="WORKS">WORKS</a></li>                      
-                    <li><a href="#intro" class="scroll" title="ABOUT">ABOUT</a></li>
-                    <li><a href="#contact" class="scroll" title="CONTACT">CONTACT</a></li>
-                </ul>
-            </div>
-            
-            <div class="navbar-footer desk">
-                <ul class="social-list">
-                    <li><a href="https://www.instagram.com/nammaeul/" target="_blank" title="instagram">
-                        <img id="insta" src="./images/icon/insta.svg"></a></li>
-                    <li><a href="https://www.facebook.com/junghak.lee.1/" target="_blank" title="facebook">
-                        <img id="facebook" src="./images/icon/facebook.svg"></a></li>
-                    <li><a href="https://github.com/leehaks" target="_blank" title="github">
-                        <img id="git" src="./images/icon/github.svg"></a></li>
-                </ul>                
-            </div>    
 
-            <div class="navbar-mobile">
-                <div class="navbar-header mobile">
-                    <h1 href="#" class="logo"><img src="images/logo.png" alt="logo" /></h1>                                              
-                </div>
-                <div class="navbar-footer">
-                    <ul class="social-list">
-                        <li><a href="https://www.instagram.com/nammaeul/" target="_blank" title="instagram">
-                            <img src="./images/icon/insta-w.svg"></a></li>
-                        <li><a href="https://www.facebook.com/junghak.lee.1/" target="_blank" title="facebook">
-                            <img src="./images/icon/facebook-w.svg"></a></li>
-                        <li><a href="https://github.com/leehaks" target="_blank" title="github">
-                            <img src="./images/icon/github-w.svg"></a></li>
-                    </ul>
-                </div>
-            </div>
+            <div class="navbar-logo">
+                <a href="#home" class="logo" alt="메인화면바로가기" title="leehaks-homepage"></a>                                              
+            </div>            
+            
+            <ul class="navbar-menu list">
+                <li><a alt="메인화면페이지이동" href="#home" class="scroll" title="HOME">HOME</a></li>
+                <li><a alt="기술능력페이지이동" href="#skill" class="scroll" title="SKILL">SKILL</a></li>
+                <li><a alt="프로젝트경험페이지이동" href="#works" class="scroll" title="WORKS">WORKS</a></li>                      
+                <li><a alt="내정보페이지이동" href="#intro" class="scroll" title="ABOUT">ABOUT</a></li>
+                <li><a alt="연락처페이지이동" href="#contact" class="scroll" title="CONTACT">CONTACT</a></li>
+            </ul>
+
+            <ul class="navbar-link list">
+                <li><a href="https://www.instagram.com/nammaeul/" target="_blank" title="instagram" alt="인스타그램링크"></a></li>
+                <li><a href="https://www.facebook.com/junghak.lee.1/" target="_blank" title="facebook" alt="페이스북링크"></a></li>
+                <li><a href="https://github.com/leehaks" target="_blank" title="github" alt="깃허브링크"></a></li>
+            </ul>   
+
+            <a class="navbar-toggle-btn" href="#" alt="메뉴확장토글버튼" ><img src="./images/icon/bars.svg" alt="" /></a>
 
         </nav>    
     </header>
@@ -126,8 +105,7 @@
                         <li class="develop-item">
                             <span class="skill-icon"><object type="image/svg+xml" data="./images/icon/terminal.svg">Github</object></span>
                             <h3 class="skill-tit">DEVELOPMENT</h3>
-                            <p>With Code Language, I code mobile web, responsive & hybrid web for PC</p>
-                            
+                            <p>With Code Language, I code mobile web, responsive & hybrid web for PC</p>                            
                             <ul class="desc-content">
                                 <li><p>웹표준, 웹접근성에 맞는 마크업 구현가능</p></li>
                                 <li><p>데스크탑, 반응형, 모바일 페이지 제작가능</p></li>
@@ -234,7 +212,7 @@
                                 <p>현재 제작중인 Component 요소들을 토대로 빠른 작업속도와 여러 가지의 시안들을 토대로
                                     한자리에 머물지 않고 항상 정진하는 모습으로 모든일에 최선을 다합니다. 
                                 </p>
-                                <a href="https://github.com/leehaks" target="_blank" title="github">My GitHub !</a>
+                                <a href="https://github.com/leehaks" target="_blank" title="github" alt="깃허브링크바로가기">My GitHub !</a>
                             </div>
                         </li>
                     </ul>
@@ -265,7 +243,8 @@
                                     <div class="card">
                                         <div class="tit">
                                             <div class="business-logo">
-                                                <span><a href="https://bitnine.net/downloads-4/agensbrowser-v-1-0/" target="_blank"><img src="./images/logo/bitnine.png" alt="skhynix-logo"></a></span>
+                                                <span><a href="https://bitnine.net/downloads-4/agensbrowser-v-1-0/" target="_blank" alt="bitnine프로젝트">
+                                                    <img src="./images/logo/bitnine.png" alt="skhynix-logo"></a></span>
                                             </div>
                                         </div>
                                         <div class="con">
@@ -413,7 +392,8 @@
                                         <div class="tit">
                                             <div class="business-logo">
                                                 <span>
-                                                    <a href="http://www.resortcompany.co.kr/" target="_blank"><img src="./images/logo/resort.png" alt="resort-logo"></a>
+                                                    <a href="http://www.resortcompany.co.kr/" target="_blank" alt="리조트컴퍼니링크바로가기">
+                                                        <img src="./images/logo/resort.png" alt="resort-logo"></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -511,7 +491,8 @@
                                         <div class="tit">
                                             <div class="business-logo">
                                                 <span>
-                                                    <a href="https://www.samsungsdi.co.kr/" target="_blank"><img src="./images/logo/sdi.png" alt="sdi-logo"></a>
+                                                    <a href="https://www.samsungsdi.co.kr/" target="_blank" alt="삼성SDI링크바로가기">
+                                                        <img src="./images/logo/sdi.png" alt="sdi-logo"></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -667,7 +648,7 @@
                                         <div class="con">
                                             <div>
                                                 <h3># Flex-Layout</h3>
-                                                <a href="https://leehaks.github.io/Flex-layout/" target="_blank">+ MORE VIEW</a>
+                                                <a href="https://leehaks.github.io/Flex-layout/" target="_blank" alt="flex레이아웃링크바로가기">+ MORE VIEW</a>
                                             </div>
                                             <p>
                                                 Flex를 기반으로, setTimeOut을 이용한 원페이지 레이아웃으로 
@@ -686,7 +667,7 @@
                                         <div class="con">
                                             <div>
                                                 <h3># Grid-Layout</h3>
-                                                <a href="https://leehaks.github.io/Grid-layout" target="_blank">+ MORE VIEW</a>
+                                                <a href="https://leehaks.github.io/Grid-layout" target="_blank" alt="그리드레이아웃링크바로가기">+ MORE VIEW</a>
                                             </div>
                                             <p>
                                                 Grid를 기반으로, Javascript 또는 Mediaquery 사용없이 순수 Grid Css 작업으로 웹에서부터 모바일까지 대응이 가능
@@ -704,7 +685,7 @@
                                         <div class="con">
                                             <div>                                                        
                                                 <h3># Tab-Component</h3>
-                                                <a href="https://leehaks.github.io/tab-component" target="_blank">+ MORE VIEW</a>
+                                                <a href="https://leehaks.github.io/tab-component" target="_blank" alt="tab컴포넌트링크바로가기">+ MORE VIEW</a>
                                             </div>
                                             <p>
                                                 Javascript를 활용한 Tab-Component로써, a.active 효과는 
@@ -723,7 +704,7 @@
                                         <div class="con">
                                             <div>
                                                 <h3># Slider-component</h3>
-                                                <a href="https://leehaks.github.io/slider-component" target="_blank">+ MORE VIEW</a>
+                                                <a href="https://leehaks.github.io/slider-component" target="_blank" alt="slider컴포넌트링크바로가기">+ MORE VIEW</a>
                                             </div>
                                             <p>
                                                 BxSlider.js를 활용한 페이지로, 모바일까지 대응가능한 반응형페이지제작, 
@@ -742,7 +723,7 @@
                                         <div class="con">
                                             <div>
                                                 <h3># Accodion-Component</h3>
-                                                <a href="https://leehaks.github.io/accordion-component" target="_blank">+ MORE VIEW</a>
+                                                <a href="https://leehaks.github.io/accordion-component" target="_blank" alt="아코디언컴포넌트링크바로가기">+ MORE VIEW</a>
                                             </div>
                                             <p>
                                                 선택된요소 외에 전부 OFF 모드, 또는 선택된요소 외에 다른요소도 ON 모드로 
@@ -755,13 +736,13 @@
                                     <div class="card">
                                         <div class="tit">
                                             <div class="desc-img">
-                                                <img src="./images/chart.png" alt="Accodion-Component" title="Accodion-Component"/>
+                                                <img src="./images/chart.png" alt="Chart-Component" title="Chart-Component"/>
                                             </div>
                                         </div>
                                         <div class="con">
                                             <div>
                                                 <h3># Chart-Library</h3>
-                                                <a href="https://leehaks.github.io/chart-component" target="_blank">+ MORE VIEW</a>
+                                                <a href="https://leehaks.github.io/chart-component" target="_blank" alt="차트컴포넌트링크바로가기">+ MORE VIEW</a>
                                             </div>
                                             <p>
                                                 Chart.js를 활용한 페이지로, DB와 데이터바인딩이 되기 전의 전체 구성설정 완료 및 반응형페이지에 맞게 크기변환 가능
@@ -794,7 +775,7 @@
                                             </p>
                                         </div>
                                         <div class="bot">
-                                            <span><a href="./file/graphvisualization.pdf" target="_blank" download>그래프시각화</a></span>
+                                            <span><a href="./file/graphvisualization.pdf" target="_blank" alt="pdf파일다운로드" download>그래프시각화</a></span>
                                         </div>
                                     </div>
                                 </li>
@@ -813,7 +794,7 @@
                                             </p>
                                         </div>          
                                         <div class="bot">
-                                            <span><a href="./file/app.pdf.pdf" target="_blank" download>어플앱</a></span>
+                                            <span><a href="./file/app.pdf.pdf" target="_blank" alt="pdf파일다운로드" download>어플앱</a></span>
                                         </div>                              
                                     </div>
                                 </li>
@@ -832,7 +813,7 @@
                 </div>
                 <div class="con">
                     <div class="box profile-img">
-                        <img src="images/about.jpg" alt="about" />
+                        <img src="images/about.jpg" alt="about me" />
                     </div>
                     <div class="box profile-text">
                         <h3><strong>LEE JUNG HAK</strong></h3>
@@ -884,12 +865,7 @@
     </footer>
 
     <script>
-        let progress = document.querySelectorAll('.progress-bar'); 
-
-        for(let i=0;i<progress.length;i++){
-            let progressWidth = progress[i].getAttribute('data-num'); 
-            progress[i].querySelector('.progress').style.width = progressWidth + "%"
-        }
+        
 
     </script>
 </body>

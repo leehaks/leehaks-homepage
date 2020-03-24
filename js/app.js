@@ -61,16 +61,21 @@ window.onload = function(){
         tabComponent[i].addEventListener('click', tabHandler); 
     }
 
-    // tabComponent.forEach(items => { 
-    //     let tabLabelFirst = items.querySelector('.tab-label-group .tab-label');
-    //     let tabPanelFirst = items.querySelector('.tab-panel');
-    //     activate(tabLabelFirst); 
-    //     activatePanel(tabPanelFirst);
+    const navToggleBtn = document.querySelector('.navbar-toggle-btn'); 
+    const navMenu = document.querySelector('.navbar-menu'); 
+    const navLink = document.querySelector('.navbar-link'); 
 
-    //     let labelBar = document.createElement('div'); 
-    //     labelBar.classList.add('bar');
-    //     items.querySelector('.tab-label-group').appendChild(labelBar); 
+    navToggleBtn.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        navMenu.classList.toggle('active'); 
+        navLink.classList.toggle('active'); 
+    })
 
-    //     items.addEventListener('click', tabHandler); 
-    // })
+    const progress = document.querySelectorAll('.progress-bar'); 
+
+    for(let i=0;i<progress.length;i++){
+        let progressWidth = progress[i].getAttribute('data-num'); 
+        progress[i].querySelector('.progress').style.width = progressWidth + "%"
+    }
+
 }
