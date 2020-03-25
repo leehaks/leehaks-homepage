@@ -1,5 +1,5 @@
 header { 
-    width: 100%; 
+    width: 100vw; 
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -541,6 +541,8 @@ header .navbar-toggle-btn {
 }
 
 .contact-set form textarea { resize: none; }
+
+.contact-set fieldset legend { text-align: center; }
 
 
 footer { 
